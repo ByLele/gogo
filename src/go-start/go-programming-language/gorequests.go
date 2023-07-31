@@ -15,7 +15,7 @@ func fetch(url string, ch chan<- string) {
 		ch <- fmt.Sprint(err)
 		return
 	}
-	nbytes, err := io.Copy(io.Discard, resp.Body)
+	nbytes, err := io.Copy(io.Discard, resp.Body) //TODO
 
 	if err != nil {
 		ch <- fmt.Sprintf("while reanding %d:%v", url, err)

@@ -12,7 +12,7 @@ func _func_arr_() {
 	fmt.Printf("first %d\n",arr[0])
 	a := [3]int{1,2,3}
 	b := [10]int{1,2,3}
-	c :=[...]int{1,2,3}//自动计算个数
+	c :=[...]int{1,2,3}//自动计算个数//TODO:map
 	doubleArray := [2][4]int {int{1,2,3,4}, [4]int{5,6,7,8}}
 }
 
